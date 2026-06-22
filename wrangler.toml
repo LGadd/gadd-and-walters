@@ -1,0 +1,14 @@
+# Cloudflare Pages configuration.
+#
+# This site is plain static HTML/CSS/JS that lives at the repository root, so
+# there is NO build step. The "build output directory" is therefore the repo
+# root itself ("."). Cloudflare reads this file when you connect the repo and
+# configures the Pages project automatically.
+#
+# If the dashboard still asks, use these build settings:
+#   Framework preset:        None
+#   Build command:           (leave blank)
+#   Build output directory:  /
+name = "gadd-and-walters"
+pages_build_output_dir = "."
+compatibility_date = "2025-01-01"
