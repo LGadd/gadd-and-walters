@@ -1,0 +1,4 @@
+# Temporary alias so the G & W Gardner demo can be shown at a tidy URL.
+# Remove this file (and the customer_website/ folder) when it's no longer needed.
+/gardner   /customer_website/gw-gardner/   302
+/gardner/  /customer_website/gw-gardner/   302

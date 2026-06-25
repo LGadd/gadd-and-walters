@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Project image — available on request">
+  <rect width="400" height="300" fill="#ece7da"/>
+  <rect x="0" y="0" width="400" height="300" fill="url(#g)" opacity="0.6"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f2e7"/>
+      <stop offset="1" stop-color="#ddd5c2"/>
+    </linearGradient>
+  </defs>
+  <!-- blueprint house + trowel motif -->
+  <g fill="none" stroke="#2a2a2a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.5">
+    <path d="M120 178v-46l60-40 60 40v46"/>
+    <path d="M104 132l76-52 76 52"/>
+    <rect x="156" y="150" width="48" height="28"/>
+  </g>
+  <g fill="none" stroke="#c8901c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <path d="M250 96l34 14-22 30z"/>
+    <path d="M262 140l-10 14"/>
+  </g>
+  <text x="200" y="232" text-anchor="middle" font-family="'Zilla Slab', Georgia, serif" font-size="18" font-weight="600" fill="#7a715c" letter-spacing="1">Project photo on request</text>
+</svg>
