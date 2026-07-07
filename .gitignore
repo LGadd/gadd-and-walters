@@ -6,6 +6,10 @@ skills-lock.json
 # --- Cloudflare Wrangler local cache/state ---
 .wrangler/
 
+# --- Secrets (this is a PUBLIC repo — never commit credentials) ---
+.env
+.env.*
+
 # --- OS / editor cruft ---
 .DS_Store
 Thumbs.db
