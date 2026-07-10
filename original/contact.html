@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Gadd &amp; Walters</title>
+  <meta name="description" content="Get in touch with Gadd & Walters about a new website, a redesign, or advanced features. Email lbgadduk@gmail.com or call 07471 623215 — a real person, not a call centre." />
+  <meta name="theme-color" content="#6f5bff" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect x='3' y='3' width='34' height='34' rx='9' fill='none' stroke='%2314121c' stroke-width='3'/%3E%3Ctext x='20' y='28' text-anchor='middle' font-family='Georgia,serif' font-size='22' font-weight='600' fill='%236f5bff'%3E%26amp;%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body data-era="clean" data-page-era="clean">
+
+  <div class="stage" aria-hidden="true"></div>
+  <div class="stage__fx" aria-hidden="true">
+    <div class="fx fx--clean"></div><div class="fx fx--print"></div><div class="fx fx--brut"></div><div class="fx fx--glossy"></div><div class="fx fx--kinetic"></div>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="frame-top">
+    <a class="brand" href="index.html" aria-label="Gadd &amp; Walters — home">
+      <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><rect class="g" x="3" y="3" width="34" height="34" rx="9" /><text class="amp" x="20" y="28" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="24" font-weight="600">&amp;</text></svg>
+      <span class="brand__name">Gadd <i>&amp;</i> Walters</span>
+    </a>
+    <nav class="frame-nav" aria-label="Primary">
+      <a class="navlink" href="index.html">Home</a>
+      <a class="navlink" href="services.html">Services</a>
+      <a class="navlink" href="pricing.html">Pricing</a>
+      <a class="navlink" href="about.html">About</a>
+      <a class="navlink" href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="frame-actions">
+      <a class="cta-pill" href="tel:07471623215"><span>07471 623215</span><span class="arr">→</span></a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="sheet"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <nav class="sheet" id="sheet" aria-label="Menu">
+    <a href="index.html"><span class="i">01</span>Home</a>
+    <a href="services.html"><span class="i">02</span>Services</a>
+    <a href="pricing.html"><span class="i">03</span>Pricing</a>
+    <a href="about.html"><span class="i">04</span>About</a>
+    <a href="contact.html"><span class="i">05</span>Contact</a>
+  </nav>
+
+  <main>
+    <section class="era era--clean">
+      <div class="wrap">
+        <div class="page-hero" style="min-height:auto;">
+          <div>
+            <span class="tag" data-up><i></i> Contact</span>
+            <h1 class="balance" data-up>Tell us about<br><span class="thread">your business.</span></h1>
+            <p class="lead pretty" data-up style="--d:.08s; color:#4a4556;">A brand-new site, a redesign, or you're just weighing it up — drop us a message. No hard sell, no obligation, and a real person on the other end.</p>
+          </div>
+        </div>
+
+        <div class="contact-grid" style="margin-top:20px;">
+          <div class="contact-info" data-up>
+            <div class="info-card"><div class="label">Email</div><a href="mailto:lbgadduk@gmail.com">lbgadduk@gmail.com</a></div>
+            <div class="info-card"><div class="label">Phone</div><a href="tel:07471623215">07471 623215</a></div>
+            <div class="info-card"><div class="label">Who you'll speak to</div><p>Laurence &amp; Mac</p><p style="font-size:14.5px;font-weight:400;color:#4a4556;margin-top:8px;">The two of us — not a call centre. We aim to get back to every enquiry quickly, usually the same day.</p></div>
+          </div>
+
+          <div data-up style="--d:.08s">
+            <form id="enquiry-form" class="form" novalidate>
+              <h2 style="font-size:1.6rem;margin-bottom:18px;letter-spacing:-.02em;">Send us a message</h2>
+              <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required /></div>
+              <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
+              <div class="field"><label for="business">Business name <span style="color:#8b8598;">(optional)</span></label><input id="business" name="business" type="text" /></div>
+              <div class="field"><label for="message">What do you need?</label><textarea id="message" name="message" placeholder="A new site, a redesign, or just a question…" required></textarea></div>
+              <input class="hp" type="text" name="company_url" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <button class="btn btn--thread btn--lg" type="submit" style="width:100%;justify-content:center;">Send message</button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+              <p class="form-note">This is a demo form and isn't connected to an inbox yet — for now, please email or call us directly using the details on the left.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Gadd &amp; Walters home"><svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><rect class="g" x="3" y="3" width="34" height="34" rx="9" /><text class="amp" x="20" y="28" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="24" font-weight="600">&amp;</text></svg><span class="brand__name">Gadd <i>&amp;</i> Walters</span></a>
+        <p class="foot__about">Honest, affordable websites for local businesses — designed, built and looked after by Laurence Gadd and Mac Walters.</p>
+      </div>
+      <div class="foot__col"><h4>Studio</h4><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="about.html">About</a></div>
+      <div class="foot__col"><h4>Talk to us</h4><a href="contact.html">Contact</a><a href="mailto:lbgadduk@gmail.com">Email us</a><a href="tel:07471623215">Call us</a></div>
+      <div class="foot__col"><h4>Get in touch</h4><a href="mailto:lbgadduk@gmail.com">lbgadduk@gmail.com</a><a href="tel:07471623215">07471 623215</a></div>
+    </div>
+    <div class="foot__bottom"><span>© <span id="year"></span> Gadd &amp; Walters · Kent, UK</span><span>Honest pricing · No lock-in · Changes included</span></div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gadd &amp; Walters — Websites in every style, for local business</title>
+  <meta name="description" content="Two cousins who design, build and host proper websites for local businesses — without the lock-in or the surprise fees. £500 new builds, £150 redesigns, £10/month hosting, changes included. Scroll to watch us build in five different styles." />
+  <meta name="theme-color" content="#6f5bff" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect x='3' y='3' width='34' height='34' rx='9' fill='none' stroke='%2314121c' stroke-width='3'/%3E%3Ctext x='20' y='28' text-anchor='middle' font-family='Georgia,serif' font-size='22' font-weight='600' fill='%236f5bff'%3E%26amp;%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body data-era="clean">
+
+  <!-- Morphing canvas -->
+  <div class="stage" aria-hidden="true"></div>
+  <div class="stage__fx" aria-hidden="true">
+    <div class="fx fx--clean"></div>
+    <div class="fx fx--print"></div>
+    <div class="fx fx--brut"></div>
+    <div class="fx fx--glossy"></div>
+    <div class="fx fx--kinetic"></div>
+    <canvas id="starfield"></canvas>
+  </div>
+
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- Constant frame -->
+  <header class="frame-top">
+    <a class="brand" href="index.html" aria-label="Gadd &amp; Walters — home">
+      <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect class="g" x="3" y="3" width="34" height="34" rx="9" />
+        <text class="amp" x="20" y="28" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="24" font-weight="600">&amp;</text>
+      </svg>
+      <span class="brand__name">Gadd <i>&amp;</i> Walters</span>
+    </a>
+    <nav class="frame-nav" aria-label="Primary">
+      <a class="navlink" href="index.html" aria-current="page">Home</a>
+      <a class="navlink" href="services.html">Services</a>
+      <a class="navlink" href="pricing.html">Pricing</a>
+      <a class="navlink" href="about.html">About</a>
+      <a class="navlink" href="contact.html">Contact</a>
+    </nav>
+    <div class="frame-actions">
+      <a class="cta-pill" href="contact.html"><span>Start a project</span><span class="arr">→</span></a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="sheet"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- Era rail -->
+  <nav class="rail" aria-label="Jump to era">
+    <a href="#now"     data-target="clean"   class="on"><span class="r-txt">Now</span><span class="r-dot"></span></a>
+    <a href="#story"   data-target="print"><span class="r-txt">Editorial</span><span class="r-dot"></span></a>
+    <a href="#build"   data-target="brut"><span class="r-txt">The grid</span><span class="r-dot"></span></a>
+    <a href="#pricing" data-target="glossy"><span class="r-txt">Depth</span><span class="r-dot"></span></a>
+    <a href="#proof"   data-target="kinetic"><span class="r-txt">Motion</span><span class="r-dot"></span></a>
+  </nav>
+
+  <!-- Mobile sheet -->
+  <nav class="sheet" id="sheet" aria-label="Menu">
+    <a href="index.html"><span class="i">01</span>Home</a>
+    <a href="services.html"><span class="i">02</span>Services</a>
+    <a href="pricing.html"><span class="i">03</span>Pricing</a>
+    <a href="about.html"><span class="i">04</span>About</a>
+    <a href="contact.html"><span class="i">05</span>Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- ================= ERA 01 · CLEAN (now) ================= -->
+    <section class="era era--clean" data-era-name="clean" id="now">
+      <div class="wrap">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <span class="tag"><i></i> Two cousins · a web studio · Kent, UK</span>
+            <h1 class="balance" data-up>We build websites in <span class="serif">any</span> style. Keep scrolling — you're looking at <span class="thread">five of them.</span></h1>
+            <p class="hero__lead pretty" data-up style="--d:.08s">We design, build and host proper websites for local businesses — without the lock-in, the monthly developer retainer, or the "that'll-be-extra" email every time you want a change. As you scroll, this page travels through the eras of web design. Every section is a different craft. All of it is us.</p>
+            <div class="hero__cta" data-up style="--d:.16s">
+              <a class="btn btn--thread btn--lg" href="contact.html">Start a project <span class="arr">→</span></a>
+              <a class="btn btn--ghost btn--lg" href="#build"><span>See how it works</span></a>
+            </div>
+            <div class="hero__meta" data-up style="--d:.24s">
+              <span><b class="k">£500</b> new build</span>
+              <span><b class="k">£150</b> redesign</span>
+              <span><b class="k">£10</b>/mo hosting</span>
+              <span><b class="k">£0</b> per change</span>
+            </div>
+          </div>
+
+          <!-- Code-native "style switcher" preview — cycles to hint the morph -->
+          <div class="hero__vis" data-up style="--d:.12s" aria-hidden="true">
+            <div class="showcase">
+              <div class="showcase__screen" style="opacity:1;">
+                <div class="showcase__bar"><i></i><i></i><i></i></div>
+                <div class="showcase__body"><span class="line big"></span><span class="line w2"></span><span class="line w1"></span><span class="line w3"></span></div>
+                <span class="showcase__label">01 — clean</span>
+              </div>
+              <div class="showcase__screen" style="opacity:0; background:#efe7d6;">
+                <div class="showcase__bar" style="border-color:rgba(42,28,16,.15)"><i></i><i></i><i></i></div>
+                <div class="showcase__body"><span class="line big" style="background:#2a1c10;opacity:1;height:26px"></span><span class="line w2" style="background:rgba(42,28,16,.18)"></span><span class="line w1" style="background:rgba(42,28,16,.18)"></span></div>
+                <span class="showcase__label">02 — editorial</span>
+              </div>
+              <div class="showcase__screen" style="opacity:0; background:#111; ">
+                <div class="showcase__bar" style="border-color:rgba(255,255,255,.12)"><i style="background:rgba(255,255,255,.25)"></i><i style="background:rgba(255,255,255,.25)"></i><i style="background:rgba(255,255,255,.25)"></i></div>
+                <div class="showcase__body"><span class="line big" style="background:var(--thread-bright)"></span><span class="line w2" style="background:rgba(255,255,255,.16)"></span><span class="line w3" style="background:rgba(255,255,255,.16)"></span></div>
+                <span class="showcase__label" style="color:rgba(255,255,255,.6)">04 — glossy</span>
+              </div>
+              <div class="showcase__pager"><b class="on"></b><b></b><b></b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="trust" data-up>
+        <span><b>£500</b> new builds</span><span class="sep"></span>
+        <span><b>£150</b> redesigns</span><span class="sep"></span>
+        <span><b>£10</b>/mo hosting</span><span class="sep"></span>
+        <span><b>£0</b> per change</span><span class="sep"></span>
+        <span>You own your site</span>
+      </div>
+
+      <div class="wrap" style="margin-top:clamp(70px,10vh,120px);">
+        <div class="sec-head" data-up>
+          <span class="tag"><i></i> Why we exist</span>
+          <h2 class="balance">Good websites shouldn't cost the earth — or trap you.</h2>
+          <p class="pretty">Too many small businesses pay premium monthly fees for a builder they have to run themselves, then pay again for every little change. We do the opposite.</p>
+        </div>
+        <div class="cards3">
+          <article class="vcard" data-up><div class="ic">◎</div><h3>One honest price</h3><p>A clear one-off fee to build or move your site, then £10 a month to host it. No tiers, no upsell ladder, no surprise renewal.</p></article>
+          <article class="vcard" data-up style="--d:.08s"><div class="ic">↻</div><h3>Changes are free</h3><p>New text, a new page, fresh photos, a seasonal offer? You email one of us, we make the change. No per-edit charges, ever.</p></article>
+          <article class="vcard" data-up style="--d:.16s"><div class="ic">⚑</div><h3>You own it</h3><p>Your business, your content, your domain. If you ever want to leave, the site comes with you. Nothing held hostage.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ERA 02 · PRINT (editorial) ================= -->
+    <section class="era era--print" data-era-name="print" id="story">
+      <div class="wrap">
+        <div class="print-masthead" data-up>
+          <span class="issue">The G&amp;W Gazette</span>
+          <span class="issue">Est. 2026 · Kent</span>
+          <span class="issue">No. 01</span>
+        </div>
+
+        <h2 class="print-lead balance" data-up>Two cousins, a lot of late nights, and one stubborn idea: local businesses deserve a site that looks like it cost <em>five times</em> what it did.</h2>
+
+        <div class="print-cols" data-up>
+          <p class="print-drop">We grew up making things together, and we kept noticing the same thing — brilliant local businesses stuck with tired websites, because the alternative was an agency quote that made your eyes water, or a DIY builder that fought you every step.</p>
+          <p>So we started Gadd &amp; Walters. One of us designs and builds; the other keeps everything running and up to date. When you email, a person who actually made your site emails back — usually the same day.</p>
+          <p>We charge one fair price to build it, a small monthly fee to host it, and nothing for the changes. That's the whole model. No account managers, no lock-in, no clever fine print.</p>
+          <p>What you're scrolling through is our sample book. Five sections, five completely different styles — proof we can dress your business in whatever suits it best.</p>
+        </div>
+
+        <div class="svc-list">
+          <div class="svc-head sec-head" data-up style="margin-top:8px;"><span class="tag"><i></i> <span class="num">§</span> What we do</span></div>
+          <a class="svc-row" href="services.html" data-up>
+            <span class="no">01</span>
+            <h3>Brand-new website</h3>
+            <p>Designed from a blank page around your business, written, laid out and built to load fast everywhere.</p>
+            <span class="go">£500 · one-off →</span>
+          </a>
+          <a class="svc-row" href="services.html" data-up>
+            <span class="no">02</span>
+            <h3>Redesign &amp; move</h3>
+            <p>Already online but dated? We rebuild it properly, carry your content across and move it onto your own domain.</p>
+            <span class="go">£150 · one-off →</span>
+          </a>
+          <a class="svc-row" href="services.html" data-up>
+            <span class="no">03</span>
+            <h3>Hosting &amp; care</h3>
+            <p>Fast, secure hosting plus every standard change you'll ever need — included, not invoiced.</p>
+            <span class="go">£10 · monthly →</span>
+          </a>
+          <a class="svc-row" href="services.html" data-up>
+            <span class="no">04</span>
+            <h3>Going further</h3>
+            <p>Card payments, bookings, logins and chat, quoted up front and priced for your scale — never a premium tier.</p>
+            <span class="go">Quoted →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ERA 03 · BRUTALIST (the grid) ================= -->
+    <section class="era era--brut" data-era-name="brut" id="build">
+      <div class="wrap">
+        <div class="brut-head" data-up>
+          <h2>How it<br>works</h2>
+          <span class="meta">04 steps · first chat → live site<br>no briefs · no jargon</span>
+        </div>
+
+        <div class="brut-steps">
+          <div class="brut-step" data-up>
+            <span class="bs-no">01</span><span class="bs-k">We talk</span>
+            <h3>Talk</h3>
+            <p>Tell us about the business and what it needs to do. Straight answers on what's possible and what it costs.</p>
+          </div>
+          <div class="brut-step" data-up style="--d:.06s">
+            <span class="bs-no">02</span><span class="bs-k">We design</span>
+            <h3>Design</h3>
+            <p>We shape the site around your brand — colours, words, photos — and show it to you live before anything goes public.</p>
+          </div>
+          <div class="brut-step" data-up style="--d:.12s">
+            <span class="bs-no">03</span><span class="bs-k">We launch</span>
+            <h3>Launch</h3>
+            <p>Once it's right, we put it on your domain, wire up hosting, and send you live. One-off fee paid, you're online.</p>
+          </div>
+          <div class="brut-step" data-up style="--d:.18s">
+            <span class="bs-no">04</span><span class="bs-k">We stay</span>
+            <h3>Look&nbsp;after</h3>
+            <p>Need a change next week or next year? Email us — it's already covered by your £10 a month.</p>
+          </div>
+        </div>
+
+        <div class="sec-head" data-up style="margin-top:64px;"><span class="tag"><i></i> <span class="num">×</span> The honest comparison</span></div>
+        <div class="compare-wrap" data-up>
+          <table class="compare">
+            <thead>
+              <tr><th>&nbsp;</th><th class="us">Gadd &amp; Walters</th><th>DIY builders</th><th>Pay-per-change dev</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Who builds it</td><td class="us"><b>We do, from scratch</b></td><td>You do, yourself</td><td>They do</td></tr>
+              <tr><td>Cost per change</td><td class="us"><b>Included</b></td><td>Your time</td><td>Charged each time</td></tr>
+              <tr><td>Monthly cost</td><td class="us"><b>£10 hosting</b></td><td>£15–30+ for features</td><td>Build + ongoing fees</td></tr>
+              <tr><td>Who maintains it</td><td class="us"><b>We do</b></td><td>You do</td><td>Extra cost</td></tr>
+              <tr><td>Do you own it</td><td class="us"><b>Yes</b></td><td>Tied to their platform</td><td>Varies</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ERA 04 · GLOSSY DARK (depth) ================= -->
+    <section class="era era--glossy" data-era-name="glossy" id="pricing">
+      <div class="wrap">
+        <div class="sec-head center" data-up>
+          <span class="tag"><i></i> Straightforward pricing <i></i></span>
+          <h2 class="balance">No hidden costs. Here's everything.</h2>
+          <p class="pretty">The whole price list, on one screen. Anything more advanced is quoted up front, so you only pay for what you actually need.</p>
+        </div>
+
+        <div class="price-grid">
+          <article class="pcard" data-up>
+            <h3>Redesign &amp; move</h3>
+            <p class="sub">Already have a site? We rebuild it properly and move it across.</p>
+            <div class="price">£150<small> one-off</small></div>
+            <span class="once">For existing sites</span>
+            <ul>
+              <li>Full redesign of your current site</li>
+              <li>Content carried over &amp; tidied</li>
+              <li>Moved onto your domain</li>
+              <li>Then just £10/month hosting</li>
+            </ul>
+            <a class="btn btn--ghost" href="pricing.html"><span>See what's included</span></a>
+          </article>
+
+          <article class="pcard feat" data-up style="--d:.08s">
+            <span class="pc-tag">Most popular</span>
+            <h3>Brand-new website</h3>
+            <p class="sub">A complete site designed and built from scratch around your brand.</p>
+            <div class="price">£500<small> one-off</small></div>
+            <span class="once">For new sites</span>
+            <ul>
+              <li>Designed from scratch for your business</li>
+              <li>Multiple pages, mobile-ready</li>
+              <li>Your branding, copy &amp; photos</li>
+              <li>Then just £10/month hosting</li>
+            </ul>
+            <a class="btn btn--thread" href="contact.html">Start a project <span class="arr">→</span></a>
+          </article>
+
+          <article class="pcard" data-up style="--d:.16s">
+            <h3>Advanced features</h3>
+            <p class="sub">Card payments, logins, booking and chat.</p>
+            <div class="price">Quoted<small> on request</small></div>
+            <span class="once">Tailored to you</span>
+            <ul>
+              <li>Take card payments online</li>
+              <li>Customer login accounts</li>
+              <li>Booking &amp; help chatbots</li>
+              <li>Priced for your scale, not a tier</li>
+            </ul>
+            <a class="btn btn--ghost" href="contact.html"><span>Ask for a quote</span></a>
+          </article>
+        </div>
+
+        <div class="stat-band">
+          <div class="stat" data-up><div class="n"><span data-count="500" data-prefix="£">£500</span></div><div class="l">One-off · new site</div></div>
+          <div class="stat" data-up style="--d:.06s"><div class="n"><span data-count="150" data-prefix="£">£150</span></div><div class="l">One-off · redesign</div></div>
+          <div class="stat" data-up style="--d:.12s"><div class="n"><span data-count="10" data-prefix="£">£10</span></div><div class="l">Per month · hosting</div></div>
+          <div class="stat" data-up style="--d:.18s"><div class="n"><span data-count="0" data-prefix="£">£0</span></div><div class="l">Per change · always</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ERA 05 · KINETIC (motion / the reveal) ================= -->
+    <section class="era era--kinetic" data-era-name="kinetic" id="proof">
+      <div class="marquee" data-up aria-hidden="true">
+        <div class="marquee__row">
+          <span>Clean <i class="star">✦</i> Editorial <i class="star">✦</i> Brutalist <i class="star">✦</i> Glossy <i class="star">✦</i> Kinetic <i class="star">✦</i></span>
+          <span>Clean <i class="star">✦</i> Editorial <i class="star">✦</i> Brutalist <i class="star">✦</i> Glossy <i class="star">✦</i> Kinetic <i class="star">✦</i></span>
+        </div>
+      </div>
+
+      <div class="wrap finale">
+        <span class="tag" data-up><i></i> The reveal <i></i></span>
+        <h2 class="balance" data-up>You just scrolled through <span class="serif">five</span> completely different websites. <span class="thread">Two cousins built every one.</span></h2>
+        <p class="pretty" data-up style="--d:.08s">That's the whole pitch. Whatever your trade — and whatever look fits it — we can build it, host it, and keep it up to date for the price of a couple of coffees a month. No agency, no lock-in, no nonsense.</p>
+
+        <div class="hero__cta" data-up style="--d:.16s">
+          <a class="btn btn--thread btn--lg" href="contact.html">Start a project <span class="arr">→</span></a>
+          <a class="btn btn--ghost btn--lg" href="pricing.html"><span>View pricing</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="foot">
+    <div class="foot__grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Gadd &amp; Walters home">
+          <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><rect class="g" x="3" y="3" width="34" height="34" rx="9" /><text class="amp" x="20" y="28" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="24" font-weight="600">&amp;</text></svg>
+          <span class="brand__name">Gadd <i>&amp;</i> Walters</span>
+        </a>
+        <p class="foot__about">Honest, affordable websites for local businesses — designed, built and looked after by Laurence Gadd and Mac Walters.</p>
+      </div>
+      <div class="foot__col"><h4>Studio</h4><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="about.html">About</a></div>
+      <div class="foot__col"><h4>Talk to us</h4><a href="contact.html">Contact</a><a href="mailto:lbgadduk@gmail.com">Email us</a><a href="tel:07471623215">Call us</a></div>
+      <div class="foot__col"><h4>Get in touch</h4><a href="mailto:lbgadduk@gmail.com">lbgadduk@gmail.com</a><a href="tel:07471623215">07471 623215</a></div>
+    </div>
+    <div class="foot__bottom">
+      <span>© <span id="year"></span> Gadd &amp; Walters · Kent, UK</span>
+      <span>Honest pricing · No lock-in · Changes included</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
